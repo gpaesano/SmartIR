@@ -163,7 +163,7 @@ The following are the code files created by the amazing people in the community.
 <tr ><td class="file-td td_text">1501.json</td><td class="manufacturer-td td_text">Sanyo</td><td class="models-td td_text">SAP-KR124EHEA</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1520.json</td><td class="manufacturer-td td_text">Hisense</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1521.json</td><td class="manufacturer-td td_text">Hisense</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
-<tr ><td class="file-td td_text">1522.json</td><td class="manufacturer-td td_text">Hisense</td><td class="models-td td_text">DGR11R2</td><td class="controller-td td_text">Broadlink</td></tr>
+<tr ><td class="file-td td_text">1522.json</td><td class="manufacturer-td td_text">Hisense</td><td class="models-td td_text">DGR11R2, DC35YD01G</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1540.json</td><td class="manufacturer-td td_text">Whirlpool</td><td class="models-td td_text">SPIS412L</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1560.json</td><td class="manufacturer-td td_text">Tadiran</td><td class="models-td td_text">WIND 3P</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1580.json</td><td class="manufacturer-td td_text">Chigo</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
@@ -216,11 +216,13 @@ The following are the code files created by the amazing people in the community.
 <tr ><td class="file-td td_text">1783.json</td><td class="manufacturer-td td_text">Trotec</td><td class="models-td td_text">PAC 3500 E</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1800.json</td><td class="manufacturer-td td_text">Ballu</td><td class="models-td td_text">YKR-K/002E</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1820.json</td><td class="manufacturer-td td_text">Riello</td><td class="models-td td_text">WSI XN, RAR-3U4</td><td class="controller-td td_text">Broadlink</td></tr>
+<tr ><td class="file-td td_text">1832.json</td><td class="manufacturer-td td_text">Midea</td><td class="models-td td_text">Dreo DR-HAC001, Midea U-Shaped AC, MVP-30-HP-230-25, MVP-36-HP-230-25, EZPRO-24-HP-23016, EZPRO-12-HP-11516, Midea RG10F2(D2)/BGEFU1 (remote), Midea RG10B(B)/BGEF (remote), Midea/Dreo RG10B(K1)/BGEFU1 (remote)</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1840.json</td><td class="manufacturer-td td_text">Hualing</td><td class="models-td td_text">KFR-45GW/JNV, KFR-45G/JNV</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1860.json</td><td class="manufacturer-td td_text">Simbio</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1880.json</td><td class="manufacturer-td td_text">Saunier Duval</td><td class="models-td td_num">1</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1900.json</td><td class="manufacturer-td td_text">TCL</td><td class="models-td td_text">TAC-12CHSD/XA21I</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1901.json</td><td class="manufacturer-td td_text">TCL</td><td class="models-td td_text">TAC-12CHSD/XA71IN</td><td class="controller-td td_text">Broadlink</td></tr>
+<tr ><td class="file-td td_text">1902.json</td><td class="manufacturer-td td_text">TCL</td><td class="models-td td_text">TAC-09CSA/KEI, TAC-12CSA/KEI, TAC-18CSA/KEI, TAC-22CSA/KEI</td><td class="controller-td td_text">UFOR11</td></tr>
 <tr ><td class="file-td td_text">1920.json</td><td class="manufacturer-td td_text">Aokesi</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1940.json</td><td class="manufacturer-td td_text">Electra</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1941.json</td><td class="manufacturer-td td_text">Electra</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
@@ -323,7 +325,10 @@ The following are the code files created by the amazing people in the community.
 <tr ><td class="file-td td_text">4580.json</td><td class="manufacturer-td td_text">Chigo</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Xiaomi</td></tr>
 <tr ><td class="file-td td_text">4800.json</td><td class="manufacturer-td td_text">TechnoLux</td><td class="models-td td_text">KFR-25GW/F</td><td class="controller-td td_text">Xiaomi</td></tr>
 <tr ><td class="file-td td_text">5520.json</td><td class="manufacturer-td td_text">Hisense</td><td class="models-td td_text">AS-07UR4SYDD815G</td><td class="controller-td td_text">LOOKin</td></tr>
+<tr ><td class="file-td td_text">6667.json</td><td class="manufacturer-td td_text">Fujitsu</td><td class="models-td td_text">AR-REG1U, ASMG18CMCA</td><td class="controller-td td_text">Broadlink</td></tr>
+<tr ><td class="file-td td_text">6668.json</td><td class="manufacturer-td td_text">Mitsubishi Electric</td><td class="models-td td_text">Remote SG15H</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">6686.json</td><td class="manufacturer-td td_text">Mitsubishi Heavy</td><td class="models-td td_text">SRK20ZSA-W, SRK25ZSA-W, SRK35ZSA-W, SRK50ZSA-W, SRK35ZS-W</td><td class="controller-td td_text">UFOR11</td></tr>
+<tr ><td class="file-td td_text">6687.json</td><td class="manufacturer-td td_text">Fujitsu</td><td class="models-td td_text">ASYG18LF, AR-RY12</td><td class="controller-td td_text">UFOR11</td></tr>
 <tr ><td class="file-td td_text">7062.json</td><td class="manufacturer-td td_text">LG</td><td class="models-td td_text">P12RK</td><td class="controller-td td_text">ESPHome</td></tr>
 <tr ><td class="file-td td_text">7065.json</td><td class="manufacturer-td td_text">LG</td><td class="models-td td_text">LG080EC, LG100EC, LG150EC, LG200EC</td><td class="controller-td td_text">ESPHome</td></tr>
 <tr ><td class="file-td td_text">7100.json</td><td class="manufacturer-td td_text">Daikin</td><td class="models-td td_text">FWT-GT</td><td class="controller-td td_text">ESPHome</td></tr>

@@ -304,46 +304,72 @@ class SmartIRMediaPlayer(MediaPlayerEntity, RestoreEntity):
                 self._async_power_sensor_check_schedule(state)
 
             try:
-                if self._state != state:
-                    if state == STATE_ON:
-                        if "on" not in self._commands.keys():
-                            _LOGGER.error("Missing device IR code for 'on' command.")
-                        else:
-                            await self._controller.send(self._commands["on"])
-                    elif state == STATE_OFF:
-                        if "off" not in self._commands.keys():
-                            _LOGGER.error("Missing device IR code for 'off' command.")
-                        else:
-                            await self._controller.send(self._commands["off"])
-                    await asyncio.sleep(self._delay)
+                if state == STATE_OFF:
+                    if (
+                        "on" in self._commands.keys()
+                        and isinstance(self._commands["on"], str)
+                        and self._commands["on"] == self._commands["off"]
+                        and self._state == STATE_OFF
+                    ):
+                        # prevent to resend 'off' command if same as 'on' and device is already off
+                        _LOGGER.debug(
+                            "As 'on' and 'off' commands are identical and device is already in requested '%s' state, skipping sending '%s' command",
+                            self._state,
+                            "off",
+                        )
+                    else:
+                        _LOGGER.debug("Found 'off' operation mode command.")
+                        await self._controller.send(self._commands["off"])
+                        await asyncio.sleep(self._delay)
+                else:
+                    if (
+                        "off" in self._commands.keys()
+                        and isinstance(self._commands["off"], str)
+                        and self._commands["off"] == self._commands["on"]
+                        and self._state == STATE_ON
+                    ):
+                        # prevent to resend 'on' command if same as 'off' and device is already on
+                        _LOGGER.debug(
+                            "As 'on' and 'off' commands are identical and device is already in requested '%s' state, skipping sending '%s' command",
+                            self._state,
+                            "on",
+                        )
+                    else:
+                        # if on code is not present, the on bit can be still set later in the all operation/fan codes"""
+                        _LOGGER.debug("Found 'on' operation mode command.")
+                        await self._controller.send(self._commands["on"])
+                        await asyncio.sleep(self._delay)
 
-                for keys in commands:
-                    data = self._commands
-                    for idx in range(len(keys)):
-                        if not (isinstance(data, dict) and keys[idx] in data):
-                            _LOGGER.error(
-                                "Missing device IR code for '%s' command.", keys[idx]
-                            )
-                            return
-                        elif idx + 1 == len(keys):
-                            if not isinstance(data[keys[idx]], str):
+                    for keys in commands:
+                        data = self._commands
+                        for idx in range(len(keys)):
+                            if not (isinstance(data, dict) and keys[idx] in data):
                                 _LOGGER.error(
                                     "Missing device IR code for '%s' command.",
                                     keys[idx],
                                 )
                                 return
+                            elif idx + 1 == len(keys):
+                                if not isinstance(data[keys[idx]], str):
+                                    _LOGGER.error(
+                                        "Missing device IR code for '%s' command.",
+                                        keys[idx],
+                                    )
+                                    return
+                                else:
+                                    await self._controller.send(data[keys[idx]])
+                                    await asyncio.sleep(self._delay)
+                            elif isinstance(data[keys[idx]], dict):
+                                data = data[keys[idx]]
                             else:
-                                await self._controller.send(data[keys[idx]])
-                                await asyncio.sleep(self._delay)
-                        elif isinstance(data[keys[idx]], dict):
-                            data = data[keys[idx]]
-                        else:
-                            _LOGGER.error(
-                                "Missing device IR code for '%s' command.", keys[idx]
-                            )
-                            return
+                                _LOGGER.error(
+                                    "Missing device IR code for '%s' command.",
+                                    keys[idx],
+                                )
+                                return
 
                 self._state = state
+                self._on_by_remote = False
                 self.async_write_ha_state()
 
             except Exception as e:

@@ -594,12 +594,9 @@ class SmartIRClimate(ClimateEntity, RestoreEntity):
                         )
                         return
                 else:
-                    commands = self._commands
-                    if not isinstance(commands, dict):
-                        _LOGGER.error("No device IR codes are defined.")
-                        return
-
-                    if "on" in commands.keys() and isinstance(commands["on"], str):
+                    if "on" in self._commands.keys() and isinstance(
+                        self._commands["on"], str
+                    ):
                         if (
                             "off" in self._commands.keys()
                             and isinstance(self._commands["off"], str)
@@ -615,9 +612,10 @@ class SmartIRClimate(ClimateEntity, RestoreEntity):
                         else:
                             # if on code is not present, the on bit can be still set later in the all operation/fan codes"""
                             _LOGGER.debug("Found 'on' operation mode command.")
-                            await self._controller.send(commands["on"])
+                            await self._controller.send(self._commands["on"])
                             await asyncio.sleep(self._delay)
 
+                    commands = self._commands
                     if hvac_mode in commands.keys():
                         commands = commands[hvac_mode]
                         _LOGGER.debug(

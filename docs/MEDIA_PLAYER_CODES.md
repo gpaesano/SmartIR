@@ -16,6 +16,7 @@ The following are the code files created by the amazing people in the community.
 <tr ><td class="file-td td_text">1063.json</td><td class="manufacturer-td td_text">Samsung</td><td class="models-td td_text">UN55JU7500</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1064.json</td><td class="manufacturer-td td_text">Samsung</td><td class="models-td td_text">QE49Q7FAM</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1065.json</td><td class="manufacturer-td td_text">Samsung</td><td class="models-td td_text">QE65Q67RAUXRU</td><td class="controller-td td_text">Broadlink</td></tr>
+<tr ><td class="file-td td_text">1066.json</td><td class="manufacturer-td td_text">Samsung</td><td class="models-td td_text">HT-J5500</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1080.json</td><td class="manufacturer-td td_text">Insignia</td><td class="models-td td_text">NS-42D510NA15</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1100.json</td><td class="manufacturer-td td_text">Toshiba</td><td class="models-td td_text">42C3530D</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1120.json</td><td class="manufacturer-td td_text">Yamaha</td><td class="models-td td_text">Unknown</td><td class="controller-td td_text">Broadlink</td></tr>
@@ -28,6 +29,7 @@ The following are the code files created by the amazing people in the community.
 <tr ><td class="file-td td_text">1162.json</td><td class="manufacturer-td td_text">Logitech</td><td class="models-td td_text">Z-5450</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1180.json</td><td class="manufacturer-td td_text">TCL</td><td class="models-td td_text">55EP640</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1181.json</td><td class="manufacturer-td td_text">TCL</td><td class="models-td td_text">43S6500FS, 32A325</td><td class="controller-td td_text">Broadlink</td></tr>
+<tr ><td class="file-td td_text">1182.json</td><td class="manufacturer-td td_text">TCL</td><td class="models-td td_text">55C845</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1200.json</td><td class="manufacturer-td td_text">Pace</td><td class="models-td td_text">TDS850NNZ, TDC850NF</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1220.json</td><td class="manufacturer-td td_text">Silver</td><td class="models-td td_text">MEO</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1240.json</td><td class="manufacturer-td td_text">TurboX</td><td class="models-td td_text">TXV-2420</td><td class="controller-td td_text">Broadlink</td></tr>
@@ -48,6 +50,7 @@ The following are the code files created by the amazing people in the community.
 <tr ><td class="file-td td_text">1520.json</td><td class="manufacturer-td td_text">JVC</td><td class="models-td td_text">RX-5022R</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1540.json</td><td class="manufacturer-td td_text">Epson</td><td class="models-td td_text">MG-850HD</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">1580.json</td><td class="manufacturer-td td_text">Dialog</td><td class="models-td td_text">J-103BF</td><td class="controller-td td_text">Broadlink</td></tr>
+<tr ><td class="file-td td_text">1600.json</td><td class="manufacturer-td td_text">i-CAN</td><td class="models-td td_text">4000S</td><td class="controller-td td_text">Broadlink</td></tr>
 <tr ><td class="file-td td_text">7060.json</td><td class="manufacturer-td td_text">Samsung</td><td class="models-td td_text">UA32EH5000M</td><td class="controller-td td_text">ESPHome</td></tr>
 <tr ><td class="file-td td_text">7460.json</td><td class="manufacturer-td td_text">ZTE</td><td class="models-td td_text">B860H</td><td class="controller-td td_text">ESPHome</td></tr>
 <tr ><td class="file-td td_text">8100.json</td><td class="manufacturer-td td_text">Cambridge Audio</td><td class="models-td td_text">AXR100</td><td class="controller-td td_text">Broadlink</td></tr>
