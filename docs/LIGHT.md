@@ -20,8 +20,6 @@ Find your device's brand code [here](LIGHT_CODES.md) and add the number in the `
 Add a Broadlink RM device named "Bedroom" via config flow (read the [docs](https://www.homeassistant.io/integrations/broadlink/)).
 
 ```yaml
-smartir:
-
 light:
   - platform: smartir
     name: Bedroom Ceiling Light

@@ -1,0 +1,14 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/../core"
+    ],
+    "cSpell.words": [
+        "absdir",
+        "colortemp",
+        "colortemps",
+        "hass",
+        "homeassistant",
+        "ONOFF",
+        "smartir"
+    ]
+}

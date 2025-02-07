@@ -3,7 +3,7 @@ import pathlib
 import json
 import sys
 
-from custom_components.smartir import DeviceData
+from custom_components.smartir.device_data import DeviceData
 
 CHECK_DATA = {
     "climate": {
